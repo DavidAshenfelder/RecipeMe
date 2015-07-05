@@ -1,0 +1,58 @@
+.header {
+  width: 92%;
+  border: 2px solid $secondaryText;
+  background-color: $text;
+  padding: 1.5%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 2%;
+  z-index: 100;
+
+  .menuStack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include submitButton;
+    font-size: 4vmax;
+    width: 8%;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .headerFiller {
+    height: 4vmax;
+    height: 90px;
+    width: 100%;
+  }
+}
+
+
+.headerRecipeMe {
+  width: 90%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  .headerRecipe {
+    font-size: 4vmax;
+    color: $primaryColor;
+     width: auto;
+     float: left;
+     font-family: CustomFont;
+     margin: 0;
+     text-align: right;
+  }
+
+  .headerMe {
+    font-size: 4vmax;
+    color: $text;
+    background-color: $primaryColor;
+     width: auto;
+     font-family: CustomFont;
+     margin: 0;
+     float: right;
+     text-align: left;
+  }
+}

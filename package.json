@@ -1,0 +1,19 @@
+{
+  "name": "eventme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular-route": "^1.4.1",
+    "bootstrap": "^3.3.5",
+    "angular": "^1.4.1",
+    "jquery": "^2.1.4",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

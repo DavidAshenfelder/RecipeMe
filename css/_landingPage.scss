@@ -1,0 +1,76 @@
+.landingPageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/ingredients.jpg);
+  background-size: cover;
+}
+
+.landingPageForm {
+  width: auto;
+  text-align: center;
+}
+
+.recipeMe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .recipe {
+    font-size: 8vmax;
+    color: $primaryColor;
+     width: auto;
+     float: left;
+     font-family: CustomFont;
+     margin: 0;
+     text-align: right;
+  }
+
+  .Me {
+    font-size: 8vmax;
+    color: $text;
+    background-color: $primaryColor;
+     width: auto;
+     font-family: CustomFont;
+     margin: 0;
+     float: right;
+     text-align: left;
+  }
+}
+
+.tagPhrase {
+  width: 100%;
+  height: auto;
+  color: $lightPrimaryColor;
+  font-family: CustomFont;
+  font-size: 2vmax;
+  margin:0;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.usernameWrapper {
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+  .username {
+  @include input;
+  width: 79%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  }
+}
+
+.enterWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  .enter {
+    width: 80%;
+    @include submitButton;
+  }
+}

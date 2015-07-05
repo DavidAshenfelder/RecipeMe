@@ -1,0 +1,294 @@
+.landingPageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/ingredients.jpg);
+  background-size: cover; }
+
+.landingPageForm {
+  width: auto;
+  text-align: center; }
+
+.recipeMe {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .recipeMe .recipe {
+    font-size: 8vmax;
+    color: #8BC34A;
+    width: auto;
+    float: left;
+    font-family: CustomFont;
+    margin: 0;
+    text-align: right; }
+  .recipeMe .Me {
+    font-size: 8vmax;
+    color: #212121;
+    background-color: #8BC34A;
+    width: auto;
+    font-family: CustomFont;
+    margin: 0;
+    float: right;
+    text-align: left; }
+
+.tagPhrase {
+  width: 100%;
+  height: auto;
+  color: #DCEDC8;
+  font-family: CustomFont;
+  font-size: 2vmax;
+  margin: 0;
+  margin-bottom: 5%;
+  margin-top: 5%; }
+
+.usernameWrapper {
+  width: 100%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center; }
+  .usernameWrapper .username {
+    background-color: #212121;
+    border: 1px solid #727272;
+    color: #DCEDC8;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 2vmax;
+    font-family: CustomFont;
+    opacity: .7;
+    width: 79%;
+    padding-top: 1%;
+    padding-bottom: 1%; }
+
+.enterWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%; }
+  .enterWrapper .enter {
+    width: 80%;
+    background-color: #212121;
+    font-size: 2vmax;
+    color: #727272;
+    border: 1px solid #727272;
+    font-family: CustomFont;
+    opacity: .7; }
+    .enterWrapper .enter:hover {
+      border-color: #DCEDC8;
+      color: #DCEDC8;
+      transition: ease .3s; }
+
+.ingredientsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/spices.jpg);
+  background-size: cover;
+  font-family: CustomFont; }
+  .ingredientsWrapper h1, .ingredientsWrapper h3 {
+    font-size: 3vmax;
+    color: #8BC34A; }
+  .ingredientsWrapper select {
+    font-size: 2vmax;
+    width: 92%;
+    text-align: center;
+    background-color: #212121;
+    font-size: 2vmax;
+    color: #727272;
+    border: 1px solid #727272;
+    font-family: CustomFont;
+    opacity: .7;
+    opacity: .7; }
+    .ingredientsWrapper select:hover {
+      border-color: #DCEDC8;
+      color: #DCEDC8;
+      transition: ease .3s; }
+
+.ingredientsForm {
+  text-align: center;
+  width: auto; }
+
+.ingredientsInputWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .ingredientsInputWrapper input {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: #212121;
+    border: 1px solid #727272;
+    color: #DCEDC8;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 2vmax;
+    font-family: CustomFont;
+    opacity: .7; }
+  .ingredientsInputWrapper button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    font-size: 2vmax;
+    color: #727272;
+    border: 1px solid #727272;
+    font-family: CustomFont;
+    opacity: .7;
+    width: 10%;
+    height: 100%;
+    padding: 1.9%;
+    margin: 0; }
+    .ingredientsInputWrapper button:hover {
+      border-color: #DCEDC8;
+      color: #DCEDC8;
+      transition: ease .3s; }
+
+.recipesWrapper {
+  position: relative;
+  top: 10vmax;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 310px;
+  height: auto;
+  margin: .75%; }
+  .recipesWrapper .recipeBlock {
+    width: 100%;
+    height: auto;
+    background-color: #727272; }
+    .recipesWrapper .recipeBlock:hover {
+      box-shadow: 3px 3px 3px #DCEDC8;
+      color: #DCEDC8;
+      transition: ease .2s;
+      cursor: pointer; }
+    .recipesWrapper .recipeBlock img {
+      width: 100%; }
+    .recipesWrapper .recipeBlock h3 {
+      margin: 2%; }
+
+.recipeBlockFooter {
+  background-color: #212121;
+  color: #727272;
+  border: 1px solid #727272;
+  font-family: CustomFont;
+  opacity: .7;
+  width: auto;
+  font-size: 15px;
+  margin: 0;
+  text-align: center; }
+  .recipeBlockFooter .ratingFavoriteWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .recipeBlockFooter h4 {
+    width: 30%;
+    color: #DCEDC8;
+    font-size: 15px;
+    margin: 3%; }
+  .recipeBlockFooter .emptyHeart {
+    width: 10%;
+    font-size: 20px; }
+    .recipeBlockFooter .emptyHeart:hover {
+      color: red; }
+  .recipeBlockFooter .fullHeart {
+    width: 10%;
+    font-size: 20px;
+    color: red; }
+
+.header {
+  width: 92%;
+  border: 2px solid #727272;
+  background-color: #212121;
+  padding: 1.5%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 2%;
+  z-index: 100; }
+  .header .menuStack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    font-size: 2vmax;
+    color: #727272;
+    border: 1px solid #727272;
+    font-family: CustomFont;
+    opacity: .7;
+    font-size: 4vmax;
+    width: 8%;
+    border: none; }
+    .header .menuStack:hover {
+      border-color: #DCEDC8;
+      color: #DCEDC8;
+      transition: ease .3s; }
+    .header .menuStack:hover {
+      cursor: pointer; }
+  .header .headerFiller {
+    height: 4vmax;
+    height: 90px;
+    width: 100%; }
+
+.headerRecipeMe {
+  width: 90%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center; }
+  .headerRecipeMe .headerRecipe {
+    font-size: 4vmax;
+    color: #8BC34A;
+    width: auto;
+    float: left;
+    font-family: CustomFont;
+    margin: 0;
+    text-align: right; }
+  .headerRecipeMe .headerMe {
+    font-size: 4vmax;
+    color: #212121;
+    background-color: #8BC34A;
+    width: auto;
+    font-family: CustomFont;
+    margin: 0;
+    float: right;
+    text-align: left; }
+
+@font-face {
+  font-family: CustomFont;
+  src: url("daniel/danielbd.ttf"); }
+html {
+  background-color: #212121;
+  display: flex;
+  justify-content: center; }
+
+body {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+ng-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.fullHeart {
+  display: none; }
+
+.errorMessage {
+  color: #8BC34A; }
+
+/*# sourceMappingURL=main.css.map */

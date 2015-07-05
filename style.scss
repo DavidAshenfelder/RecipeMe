@@ -1,0 +1,76 @@
+$darkPrimaryColor: #689F38;
+$primaryColor: #8BC34A;
+$lightPrimaryColor: #DCEDC8;
+$dividerColor: #B6B6B6;
+$text: #212121;
+$secondaryText: #727272;
+$accentColor: #CDDC39;
+
+@mixin submitButton {
+    background-color: $text;
+    font-size: 2vmax;
+    color: $secondaryText;
+    border: 1px solid $secondaryText;
+    font-family: CustomFont;
+    opacity: .7;
+    &:hover{
+      border-color: $lightPrimaryColor;
+      color: $lightPrimaryColor;
+      transition: ease .3s;
+    }
+  }
+
+@mixin input {
+  background-color: $text;
+  border: 1px solid $secondaryText;
+  color: $lightPrimaryColor;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 2vmax;
+  font-family: CustomFont;
+  opacity: .7;
+}
+
+@import "css/_landingPage.scss";
+@import "css/_specsPage.scss";
+@import "css/_recipeCollection.scss";
+@import "css/_header.scss";
+
+
+
+@font-face {
+font-family: CustomFont;
+src: url('daniel/danielbd.ttf');
+}
+
+
+html {
+  background-color: $text;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ng-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.fullHeart {
+  display: none;
+}
+
+.errorMessage {
+  color: $primaryColor;
+}
