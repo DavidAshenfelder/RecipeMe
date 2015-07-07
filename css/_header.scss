@@ -1,13 +1,26 @@
 .header {
-  width: 92%;
+  width: 96%;
   border: 2px solid $secondaryText;
   background-color: $text;
   padding: 1.5%;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: fixed;
+  top:2%;
   left: 2%;
   z-index: 100;
+
+.width {
+  width: 100%;
+}
+
+
+.headerForm {
+  display: flex;
+    justify-content: center;
+    width: 55%;
+}
 
   .menuStack {
     display: flex;
@@ -21,16 +34,45 @@
       cursor: pointer;
     }
   }
-  .headerFiller {
-    height: 4vmax;
-    height: 90px;
-    width: 100%;
+}
+
+.dropdown-toggle {
+  @include input;
+  font-size: 1.5vmax;
+  height: auto;
+  &:hover {
+    color: $secondaryText;
   }
 }
 
+.dropdown-menu {
+  background-color: $text;
+  border: 1px solid $secondaryText;
+  color: $lightPrimaryColor;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 2vmax;
+  font-family: CustomFont;
+  height: auto;
+  color: $secondaryText;
+}
+
+  #headerSearch, #headerSearchButton {
+    background-color: $text;
+    color: $lightPrimaryColor;
+    text-align: center;
+    font-family: CustomFont;
+    opacity: .7;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
 
 .headerRecipeMe {
-  width: 90%;
   height: auto;
   margin: 0;
   display: flex;
@@ -54,5 +96,13 @@
      margin: 0;
      float: right;
      text-align: left;
+  }
+}
+
+.headerUsernameWrapper {
+  width: 100%;
+  height: 100%;
+  p{
+    text-align: left;
   }
 }

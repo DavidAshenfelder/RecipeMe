@@ -51,7 +51,7 @@
   justify-content: center; }
   .usernameWrapper .username {
     background-color: #212121;
-    border: 1px solid #727272;
+    border: 1px solid #AAAAAA;
     color: #DCEDC8;
     text-align: center;
     padding-top: 1%;
@@ -72,8 +72,8 @@
     width: 80%;
     background-color: #212121;
     font-size: 2vmax;
-    color: #727272;
-    border: 1px solid #727272;
+    color: #AAAAAA;
+    border: 1px solid #AAAAAA;
     font-family: CustomFont;
     opacity: .7; }
     .enterWrapper .enter:hover {
@@ -87,67 +87,76 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 700px;
+  height: 720px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/spices.jpg);
   background-size: cover;
   font-family: CustomFont; }
   .ingredientsWrapper h1, .ingredientsWrapper h3 {
     font-size: 3vmax;
-    color: #8BC34A; }
+    color: #8BC34A;
+    margin: 4%; }
   .ingredientsWrapper select {
-    font-size: 2vmax;
-    width: 92%;
-    text-align: center;
+    width: 100%;
     background-color: #212121;
     font-size: 2vmax;
-    color: #727272;
-    border: 1px solid #727272;
+    color: #AAAAAA;
+    border: 1px solid #AAAAAA;
     font-family: CustomFont;
     opacity: .7;
-    opacity: .7; }
+    opacity: .7;
+    font-size: 3vmax; }
     .ingredientsWrapper select:hover {
       border-color: #DCEDC8;
       color: #DCEDC8;
       transition: ease .3s; }
+    .ingredientsWrapper select option {
+      font-size: 4vmax;
+      background-color: #212121; }
 
 .ingredientsForm {
   text-align: center;
-  width: auto; }
+  width: auto;
+  position: relative;
+  width: 60%; }
 
-.ingredientsInputWrapper {
+#searchBarForm {
   width: 100%;
-  height: 100%;
+  margin-bottom: 5%; }
+
+#searchBar {
+  width: 100%; }
+
+#ingredientSearch {
+  width: 100%;
+  height: auto;
+  background-color: #212121;
+  border: 1px solid #AAAAAA;
+  color: #DCEDC8;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 2vmax;
+  font-family: CustomFont;
+  opacity: .7;
+  font-size: 2vmax; }
+
+.submitFormWrapper {
   display: flex;
   align-items: center;
-  justify-content: center; }
-  .ingredientsInputWrapper input {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    background-color: #212121;
-    border: 1px solid #727272;
-    color: #DCEDC8;
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 2vmax;
-    font-family: CustomFont;
-    opacity: .7; }
-  .ingredientsInputWrapper button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  justify-content: center;
+  margin-top: 5%; }
+  .submitFormWrapper .submitForm {
     background-color: #212121;
     font-size: 2vmax;
-    color: #727272;
-    border: 1px solid #727272;
+    color: #AAAAAA;
+    border: 1px solid #AAAAAA;
     font-family: CustomFont;
     opacity: .7;
-    width: 10%;
+    width: 100%;
     height: 100%;
     padding: 1.9%;
     margin: 0; }
-    .ingredientsInputWrapper button:hover {
+    .submitFormWrapper .submitForm:hover {
       border-color: #DCEDC8;
       color: #DCEDC8;
       transition: ease .3s; }
@@ -163,7 +172,7 @@
   .recipesWrapper .recipeBlock {
     width: 100%;
     height: auto;
-    background-color: #727272; }
+    background-color: #AAAAAA; }
     .recipesWrapper .recipeBlock:hover {
       box-shadow: 3px 3px 3px #DCEDC8;
       color: #DCEDC8;
@@ -176,8 +185,8 @@
 
 .recipeBlockFooter {
   background-color: #212121;
-  color: #727272;
-  border: 1px solid #727272;
+  color: #AAAAAA;
+  border: 1px solid #AAAAAA;
   font-family: CustomFont;
   opacity: .7;
   width: auto;
@@ -206,23 +215,31 @@
     color: red; }
 
 .header {
-  width: 92%;
-  border: 2px solid #727272;
+  width: 96%;
+  border: 2px solid #AAAAAA;
   background-color: #212121;
   padding: 1.5%;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: fixed;
+  top: 2%;
   left: 2%;
   z-index: 100; }
+  .header .width {
+    width: 100%; }
+  .header .headerForm {
+    display: flex;
+    justify-content: center;
+    width: 55%; }
   .header .menuStack {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #212121;
     font-size: 2vmax;
-    color: #727272;
-    border: 1px solid #727272;
+    color: #AAAAAA;
+    border: 1px solid #AAAAAA;
     font-family: CustomFont;
     opacity: .7;
     font-size: 4vmax;
@@ -234,13 +251,46 @@
       transition: ease .3s; }
     .header .menuStack:hover {
       cursor: pointer; }
-  .header .headerFiller {
-    height: 4vmax;
-    height: 90px;
-    width: 100%; }
+
+.dropdown-toggle {
+  background-color: #212121;
+  border: 1px solid #AAAAAA;
+  color: #DCEDC8;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 2vmax;
+  font-family: CustomFont;
+  opacity: .7;
+  font-size: 1.5vmax;
+  height: auto; }
+  .dropdown-toggle:hover {
+    color: #AAAAAA; }
+
+.dropdown-menu {
+  background-color: #212121;
+  border: 1px solid #AAAAAA;
+  color: #DCEDC8;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 2vmax;
+  font-family: CustomFont;
+  height: auto;
+  color: #AAAAAA; }
+
+#headerSearch, #headerSearchButton {
+  background-color: #212121;
+  color: #DCEDC8;
+  text-align: center;
+  font-family: CustomFont;
+  opacity: .7; }
+
+.navbar-brand {
+  display: flex;
+  align-items: center; }
 
 .headerRecipeMe {
-  width: 90%;
   height: auto;
   margin: 0;
   display: flex;
@@ -263,13 +313,170 @@
     float: right;
     text-align: left; }
 
+.headerUsernameWrapper {
+  width: 100%;
+  height: 100%; }
+  .headerUsernameWrapper p {
+    text-align: left; }
+
+.recipeWrapper {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/baker-cuttingboard.jpg) no-repeat no-repeat center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: CustomFont;
+  color: #DCEDC8; }
+
+.recipeDetailsBlock {
+  width: 85%;
+  height: 80%;
+  background-color: #212121;
+  padding: 2%;
+  /*   position: fixed;
+  top: 4vmax;
+  left: 10vmax; */ }
+  .recipeDetailsBlock .recipeTitle {
+    margin-top: 0; }
+  .recipeDetailsBlock .recipeBlockHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .recipeDetailsBlock .recipeBlockHeader h4 {
+      text-align: center;
+      width: 15%;
+      margin: 0; }
+    .recipeDetailsBlock .recipeBlockHeader .recipeEmptyHeart {
+      width: 5%; }
+      .recipeDetailsBlock .recipeBlockHeader .recipeEmptyHeart:hover {
+        color: red; }
+    .recipeDetailsBlock .recipeBlockHeader .recipeFullHeart {
+      width: 5%;
+      color: red; }
+  .recipeDetailsBlock .recipeInfoBlock {
+    width: 50%;
+    height: 95%;
+    float: right;
+    overflow: scroll; }
+    .recipeDetailsBlock .recipeInfoBlock .directionsBlock {
+      width: 50%; }
+    .recipeDetailsBlock .recipeInfoBlock .directionsTitle {
+      font-size: 1.5vmax;
+      text-decoration: underline; }
+    .recipeDetailsBlock .recipeInfoBlock .ingredientsTitle {
+      font-size: 1.5vmax;
+      text-decoration: underline; }
+      .recipeDetailsBlock .recipeInfoBlock .ingredientsTitle .ingredientsBlock {
+        width: 50%; }
+  .recipeDetailsBlock .imageGalleryBlock {
+    width: 48%;
+    height: 80%; }
+    .recipeDetailsBlock .imageGalleryBlock .largeImage {
+      width: 95%;
+      height: 95%;
+      border: 2px solid #AAAAAA; }
+    .recipeDetailsBlock .imageGalleryBlock .imageGalleryFooter {
+      width: 100%;
+      margin-top: 2%; }
+      .recipeDetailsBlock .imageGalleryBlock .imageGalleryFooter .thumbImg {
+        width: 100px;
+        height: 60px;
+        border: 2px solid #AAAAAA; }
+        .recipeDetailsBlock .imageGalleryBlock .imageGalleryFooter .thumbImg:hover {
+          box-shadow: 2px 2px 2px #DCEDC8;
+          cursor: pointer; }
+
+.favoritesWrapper {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/fovoritesBoard.jpg) no-repeat no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: CustomFont;
+  color: #DCEDC8;
+  overflow: scroll; }
+  .favoritesWrapper h1 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 10vmax;
+    font-size: 5vmax;
+    margin: 0;
+    margin-top: 1%; }
+
+.favoritesDetailsBlock {
+  width: 60%;
+  height: 65%;
+  background-color: #212121;
+  padding: 2%;
+  margin: 1%;
+  position: relative;
+  top: 10vmax; }
+  .favoritesDetailsBlock .favoritesTitle {
+    margin-top: 0; }
+  .favoritesDetailsBlock .favoritesBlockHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .favoritesDetailsBlock .favoritesBlockHeader h4 {
+      text-align: center;
+      width: 15%;
+      margin: 0; }
+    .favoritesDetailsBlock .favoritesBlockHeader .favoritesEmptyHeart {
+      width: 5%; }
+      .favoritesDetailsBlock .favoritesBlockHeader .favoritesEmptyHeart:hover {
+        color: red; }
+    .favoritesDetailsBlock .favoritesBlockHeader .favoritesFullHeart {
+      width: 5%;
+      color: red; }
+  .favoritesDetailsBlock .favoritesInfoBlock {
+    width: 50%;
+    height: 95%;
+    float: right;
+    overflow: scroll; }
+    .favoritesDetailsBlock .favoritesInfoBlock .favoritesDirectionsBlock {
+      width: 50%; }
+    .favoritesDetailsBlock .favoritesInfoBlock .favoritesDirectionsTitle {
+      font-size: 1.5vmax;
+      text-decoration: underline; }
+    .favoritesDetailsBlock .favoritesInfoBlock .favoritesIngredientsTitle {
+      font-size: 1.5vmax;
+      text-decoration: underline; }
+      .favoritesDetailsBlock .favoritesInfoBlock .favoritesIngredientsTitle .favoritesIngredientsBlock {
+        width: 50%; }
+  .favoritesDetailsBlock .favoritesImageGalleryBlock {
+    width: 48%;
+    height: 80%; }
+    .favoritesDetailsBlock .favoritesImageGalleryBlock .favoritesLargeImage {
+      width: 95%;
+      height: 95%;
+      border: 2px solid #AAAAAA; }
+    .favoritesDetailsBlock .favoritesImageGalleryBlock .favoritesImageGalleryFooter {
+      width: 100%;
+      margin-top: 2%; }
+      .favoritesDetailsBlock .favoritesImageGalleryBlock .favoritesImageGalleryFooter .favoritesThumbImg {
+        width: 100px;
+        height: 60px;
+        border: 2px solid #AAAAAA; }
+        .favoritesDetailsBlock .favoritesImageGalleryBlock .favoritesImageGalleryFooter .favoritesThumbImg:hover {
+          box-shadow: 2px 2px 2px #DCEDC8;
+          cursor: pointer; }
+
 @font-face {
   font-family: CustomFont;
   src: url("daniel/danielbd.ttf"); }
 html {
   background-color: #212121;
-  display: flex;
-  justify-content: center; }
+  height: 100%; }
 
 body {
   width: 100%;
@@ -283,7 +490,8 @@ ng-view {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  background-color: #212121; }
 
 .fullHeart {
   display: none; }

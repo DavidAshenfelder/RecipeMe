@@ -1,0 +1,99 @@
+.recipeWrapper {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/baker-cuttingboard.jpg) no-repeat no-repeat center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: CustomFont;
+  color: $lightPrimaryColor;
+}
+
+.recipeDetailsBlock {
+  width: 85%;
+  height: 80%;
+  background-color: $text;
+  padding: 2%;
+/*   position: fixed;
+top: 4vmax;
+left: 10vmax; */
+  .recipeTitle {
+    margin-top: 0;
+  }
+
+  .recipeBlockHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    h4 {
+      text-align: center;
+      width: 15%;
+      margin: 0;
+    }
+    .recipeEmptyHeart {
+      width: 5%;
+      &:hover {
+        color: red;
+      }
+    }
+    .recipeFullHeart {
+      width: 5%;
+      color: red;
+    }
+  }
+
+  .recipeInfoBlock {
+    width: 50%;
+    height: 95%;
+    float: right;
+    overflow: scroll;
+
+    .directionsBlock {
+      width: 50%;
+    }
+    .directionsTitle {
+    font-size: 1.5vmax;
+    text-decoration: underline;
+    }
+
+
+
+    .ingredientsTitle {
+      font-size: 1.5vmax;
+      text-decoration: underline;
+      .ingredientsBlock {
+        width: 50%;
+      }
+    }
+  }
+
+  .imageGalleryBlock {
+    width: 48%;
+    height: 80%;
+
+    .largeImage {
+      width: 95%;
+      height: 95%;
+      border: 2px solid $secondaryText;
+    }
+
+    .imageGalleryFooter {
+      width: 100%;
+      margin-top: 2%;
+
+      .thumbImg {
+        width: 100px;
+        height: 60px;
+        border: 2px solid $secondaryText;
+
+        &:hover {
+          box-shadow: 2px 2px 2px $lightPrimaryColor;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

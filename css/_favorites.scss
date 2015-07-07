@@ -1,0 +1,110 @@
+.favoritesWrapper {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/fovoritesBoard.jpg) no-repeat no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: CustomFont;
+  color: $lightPrimaryColor;
+  overflow: scroll;
+  h1 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 10vmax;
+    font-size: 5vmax;
+    margin: 0;
+    margin-top: 1%;
+  }
+}
+
+.favoritesDetailsBlock {
+  width: 60%;
+  height: 65%;
+  background-color: $text;
+  padding: 2%;
+  margin: 1%;
+  position: relative;
+  top: 10vmax;
+  .favoritesTitle {
+    margin-top: 0;
+  }
+
+  .favoritesBlockHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    h4 {
+      text-align: center;
+      width: 15%;
+      margin: 0;
+    }
+    .favoritesEmptyHeart {
+      width: 5%;
+      &:hover {
+        color: red;
+      }
+    }
+    .favoritesFullHeart {
+      width: 5%;
+      color: red;
+    }
+  }
+
+  .favoritesInfoBlock {
+    width: 50%;
+    height: 95%;
+    float: right;
+    overflow: scroll;
+
+    .favoritesDirectionsBlock {
+      width: 50%;
+    }
+    .favoritesDirectionsTitle {
+    font-size: 1.5vmax;
+    text-decoration: underline;
+    }
+
+
+
+    .favoritesIngredientsTitle {
+      font-size: 1.5vmax;
+      text-decoration: underline;
+      .favoritesIngredientsBlock {
+        width: 50%;
+      }
+    }
+  }
+
+  .favoritesImageGalleryBlock {
+    width: 48%;
+    height: 80%;
+
+    .favoritesLargeImage {
+      width: 95%;
+      height: 95%;
+      border: 2px solid $secondaryText;
+    }
+
+    .favoritesImageGalleryFooter {
+      width: 100%;
+      margin-top: 2%;
+
+      .favoritesThumbImg {
+        width: 100px;
+        height: 60px;
+        border: 2px solid $secondaryText;
+
+        &:hover {
+          box-shadow: 2px 2px 2px $lightPrimaryColor;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

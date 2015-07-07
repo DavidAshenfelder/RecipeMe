@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="recipeMe">
+<html lang="en" ng-app="recipeMe" >
 <head>
   <meta charset="UTF-8">
-  <title>RecipeMe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RecipeMe</title>
+  <link rel="shortcut icon" href="images/favicon.ico"/>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="main.css">
 </head>
-<body >
+<body ng-controller="MainController">
+  <nav class="navbar navbar-default header">
+    <div class="container-fluid width ">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><div class="headerRecipeMe">
+          <h1 class="headerRecipe">recipe</h1>
+          <h1 class="headerMe">Me</h1>
+        </div>
+        </a>
+      </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="menuLink"><a  href="#/">Login</a></li>
+              <li class="menuLink"><a href="#/ingredients">Home</a></li>
+              <li class="menuLink"><a href="#/favorites">Favorites</a></li>
+              <li class="menuLink"><a href="#/recipecollection">Recipes</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left headerForm" role="search">
+          <div class="input-group">
+           <input id="headerSearch" type="text" class="form-control" placeholder="Search for...">
+           <span id="headerSearchButton" class="input-group-btn">
+             <button  class="btn btn-default" type="button">Submit</button>
+           </span>
+         </div><!-- /input-group -->
+        </form>
+        <div class="headerUsernameWrapper">
+          <p class="navbar-text navbar-right">Username: <a href="" class="navbar-link">{{username}}</a></p>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-<ng-view>
-
-</ng-view>
+<ng-view></<ng-view>
 
 
 
@@ -22,8 +65,11 @@
 <script src="node_modules/angular-route/angular-route.js"></script>
 <script src="node_modules/underscore/underscore-min.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
-<script src="js/controller.js"></script>
+<script src="controllers/controller.js"></script>
+<script src="controllers/pageController.js"></script>
+<script src="controllers/landingController.js"></script>
 <script src="js/service.js"></script>
 </body>
 </html>

@@ -1,15 +1,16 @@
-<div class="landingPageWrapper" ng-controller="LandingController as LandingCtrl">
-  <form action="" class="landingPageForm">
+<div class="landingPageWrapper">
+<!--   <ng-include src="'views/header.html'"></ng-include>
+ -->  <form action="" class="landingPageForm">
     <div class="recipeMe">
       <h1 class="recipe">recipe</h1>
       <h1 class="Me">Me</h1>
     </div>
     <p class="tagPhrase">Recipe ideas that tease the tastebuds!</p>
     <div class="usernameWrapper">
-      <input class="username" type="text" placeholder="Username">
+      <input class="username" type="text" placeholder="Username" ng-click="username = null" ng-model="username">
     </div>
     <div class="enterWrapper">
-      <input class="enter" type="button" name="enter" value="Enter">
+      <input class="enter" type="button" name="enter" value="Enter" ng-click="newUsername()">
     </div>
   </form>
 </div>

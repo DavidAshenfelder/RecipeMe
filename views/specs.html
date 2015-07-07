@@ -1,20 +1,26 @@
-<div class="ingredientsWrapper">
-  <div class="ingredientsForm">
+<!-- <ng-include src="'views/header.html'"></ng-include>
+--><div class="ingredientsWrapper">
+  <form class="ingredientsForm" ng-model="searchInputs">
     <h1>What'cha workin' with...</h1>
 
-    <div class="ingredientsInputWrapper">
-      <input type="text" placeholder="Ingredients...">
-      <button type="submit" name="addIngredients"><i class="fa fa-plus"></i></button>
-    </div>
+      <div id="searchBar" class="input-group">
+       <input id="ingredientSearch" type="text" class="form-control" placeholder="Search for..." ng-model="ingredients">
+     </div>
 
     <div class="time">
       <h3>How long 'til you grub?</h3>
-      <select name="time" id="timeSelect" >
-      <option>.5 hr</option rel="1">
-      <option> 1 hr</option rel="2">
-      <option> 1.5hr</option rel="3">
-      <option> 2 hr</option rel="4">
+      <select name="time" id="timeSelect" ng-model="selected" value="grubtime...." >
+      <option> 30 Minutes</option rel="1">
+      <option> 45 Minutes</option rel="2">
+      <option> 60 Minutes</option rel="3">
+      <option> 1 hr 15 Minutes</option rel="4">
+      <option> 1 hr 30 Minutes</option rel="5">
+      <option> 1hr 45 Minutes</option rel="6">
+      <option>  2 hours</option rel="7">
       </select>
     </div>
-  </div>
+    <div class="submitFormWrapper">
+      <button class="submitForm" type="button" ng-click="addSearch()">Submit</button>
+    </div>
+  </form>
 </div>

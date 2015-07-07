@@ -3,7 +3,7 @@ $primaryColor: #8BC34A;
 $lightPrimaryColor: #DCEDC8;
 $dividerColor: #B6B6B6;
 $text: #212121;
-$secondaryText: #727272;
+$secondaryText: #AAAAAA;
 $accentColor: #CDDC39;
 
 @mixin submitButton {
@@ -11,7 +11,7 @@ $accentColor: #CDDC39;
     font-size: 2vmax;
     color: $secondaryText;
     border: 1px solid $secondaryText;
-    font-family: CustomFont;
+    font-family: CustomFont;  
     opacity: .7;
     &:hover{
       border-color: $lightPrimaryColor;
@@ -36,6 +36,8 @@ $accentColor: #CDDC39;
 @import "css/_specsPage.scss";
 @import "css/_recipeCollection.scss";
 @import "css/_header.scss";
+@import "css/_recipe.scss";
+@import "css/_favorites.scss";
 
 
 
@@ -47,8 +49,7 @@ src: url('daniel/danielbd.ttf');
 
 html {
   background-color: $text;
-  display: flex;
-  justify-content: center;
+  height: 100%;
 }
 
 body {
@@ -65,6 +66,7 @@ ng-view {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  background-color: $text;
 }
 
 .fullHeart {

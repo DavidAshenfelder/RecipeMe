@@ -9,22 +9,27 @@
     $routeProvider
       .when('/', {
         templateUrl: 'views/landingPage.html',
-        controller: 'LandingController'
+        controller: 'MainController'
       })
 
       .when('/ingredients', {
         templateUrl: 'views/specs.html',
-        controller: 'pageController'
+        controller: 'PageController'
       })
 
-      .when('/recipes', {
+      .when('/recipecollection', {
         templateUrl: 'views/recipes.html',
-        controller: 'pageController'
+        controller: 'PageController'
       })
 
-      .when('/header', {
-        templateUrl: 'views/header.html',
-        controller: 'pageController'
+      .when('/recipe', {
+        templateUrl: 'views/recipeDetails.html',
+        controller: 'PageController'
+      })
+
+      .when('/favorites', {
+        templateUrl: 'views/favorites.html',
+        controller: 'PageController'
       })
 
       .when('/404', {
@@ -35,8 +40,13 @@
         redirectTo: '/404'
       })
   });
-
-
-
-
 })();
+
+(function(){
+  'use strict';
+
+  angular
+  .module('pages', [])
+
+
+  });
